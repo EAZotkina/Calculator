@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="key_1" type="id">key_1</item>
+    <item name="key_2" type="id">key2</item>
+    <item name="key_3" type="id">key3</item>
+    <item name="key_4" type="id">key4</item>
+    <item name="key_5" type="id">key5</item>
+    <item name="key_6" type="id">key6</item>
+    <item name="key_7" type="id">key7</item>
+    <item name="key_8" type="id">key8</item>
+    <item name="key_9" type="id">key9</item>
+    <item name="key_0" type="id">key0</item>
+    <item name="key_dot" type="id">key_dot</item>
+    <item name="image_view" type="id">image_view</item>
+    <item name="button1" type="id" />
+    <item name="button2" type="id" />
+    <item name="button3" type="id" />
+    <item name="button4" type="id" />
+    <item name="button5" type="id" />
+    <item name="button6" type="id" />
+    <item name="button7" type="id" />
+    <item name="button8" type="id" />
+    <item name="button9" type="id" />
+    <item name="button0" type="id" />
+    <item name="button_equal" type="id" />
+    <item name="button_multi" type="id" />
+    <item name="button_divide" type="id" />
+    <item name="button_add" type="id" />
+    <item name="button_sub" type="id" />
+    <item name="button_clear" type="id" />
+    <item name="button_dot" type="id" />
+    <item name="button_para1" type="id" />
+    <item name="button_para2" type="id" />
+    <item name="output" type="id" />
+</resources>
