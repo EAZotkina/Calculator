@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8899"
     tools:context=".MainActivity">
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button1"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -23,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -38,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -53,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -68,7 +67,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button5"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -83,7 +82,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -98,7 +97,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button7"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -113,7 +112,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button8"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -128,7 +127,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button9"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -143,7 +142,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button0"
         android:layout_width="185dp"
         android:layout_height="80dp"
@@ -161,7 +160,7 @@
         android:paddingEnd="95sp"
         tools:ignore="RtlSymmetry" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_equal"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -176,7 +175,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.958" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_multi"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -191,7 +190,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_divide"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -206,7 +205,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_add"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -221,7 +220,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_sub"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -236,7 +235,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_clear"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -251,7 +250,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_para1"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -266,7 +265,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_para2"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -281,7 +280,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_dot"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -296,11 +295,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.958" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_light"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="@string/key_light"
+        android:textColor="#000"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_dark"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="@string/key_dark"
+        android:textColor="#000"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@id/button_light"
+        app:layout_constraintTop_toBottomOf="@id/button_light"/>
+
+
     <TextView
         android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textSize="68sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -313,8 +333,7 @@
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
-        android:textSize="36sp"
+        style="@style/Theme.CalculatorAZot"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.909"

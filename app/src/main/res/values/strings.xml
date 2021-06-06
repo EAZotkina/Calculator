@@ -29,4 +29,6 @@
     <string name="key_8">8</string>
     <string name="key_9">9</string>
     <string name="key_0">0</string>
+    <string name="key_light">light</string>
+    <string name="key_dark">dark</string>
 </resources>
