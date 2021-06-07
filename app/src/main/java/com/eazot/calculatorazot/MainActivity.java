@@ -1,13 +1,12 @@
 package com.eazot.calculatorazot;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.TypedValue;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button b1;
@@ -42,12 +41,22 @@ public class MainActivity extends AppCompatActivity {
     private double val1 = Double.NaN;
     private double val2;
 
+    private ThemeStorage storage;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
+        storage = new ThemeStorage(this);
+
+        setTheme(storage.getTheme().getResource());
+
         setContentView(R.layout.activity_on_constrain_best);
+
         viewSetup();
+
 
         b1.setOnClickListener(view -> {
             ifErrorOnOutput();
@@ -236,6 +245,20 @@ public class MainActivity extends AppCompatActivity {
             t2.setText("");
             return true;
         });
+
+        findViewById(R.id.button_light).setOnClickListener(v -> {
+            storage.setTheme(AppTheme.LIGHT);
+
+            recreate();
+        });
+
+
+        findViewById(R.id.button_dark).setOnClickListener(v -> {
+            storage.setTheme(AppTheme.DARK);
+
+            recreate();
+        });
+
     }
 
     private void viewSetup() {
@@ -306,37 +329,6 @@ public class MainActivity extends AppCompatActivity {
     // Whether value if a double or not
     private boolean ifReallyDecimal() {
         return val1 == (int) val1;
-    }
-
-    private void noOperation() {
-        String inputExpression = t2.getText().toString();
-        if (!inputExpression.isEmpty() && !inputExpression.equals("Error")) {
-            if (inputExpression.contains("-")) {
-                inputExpression = inputExpression.replace("-", "");
-                t2.setText("");
-                val1 = Double.parseDouble(inputExpression);
-            }
-            if (inputExpression.contains("+")) {
-                inputExpression = inputExpression.replace("+", "");
-                t2.setText("");
-                val1 = Double.parseDouble(inputExpression);
-            }
-            if (inputExpression.contains("/")) {
-                inputExpression = inputExpression.replace("/", "");
-                t2.setText("");
-                val1 = Double.parseDouble(inputExpression);
-            }
-            if (inputExpression.contains("%")) {
-                inputExpression = inputExpression.replace("%", "");
-                t2.setText("");
-                val1 = Double.parseDouble(inputExpression);
-            }
-            if (inputExpression.contains("×")) {
-                inputExpression = inputExpression.replace("×", "");
-                t2.setText("");
-                val1 = Double.parseDouble(inputExpression);
-            }
-        }
     }
 
     // Make text small if too many digits.
