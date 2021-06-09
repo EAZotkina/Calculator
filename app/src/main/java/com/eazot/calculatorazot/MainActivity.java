@@ -1,8 +1,10 @@
 package com.eazot.calculatorazot;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.TypedValue;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -49,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
+
         storage = new ThemeStorage(this);
 
         setTheme(storage.getTheme().getResource());
 
         setContentView(R.layout.activity_on_constrain_best);
-
         viewSetup();
 
 
@@ -257,6 +259,11 @@ public class MainActivity extends AppCompatActivity {
             storage.setTheme(AppTheme.DARK);
 
             recreate();
+        });
+
+        findViewById(R.id.button_change_activity).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,DarkActivity.class);
+            startActivity(intent);
         });
 
     }
