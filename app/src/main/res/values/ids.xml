@@ -32,4 +32,5 @@
     <item name="button_para1" type="id" />
     <item name="button_para2" type="id" />
     <item name="output" type="id" />
+    <item name="result" type="id"/>
 </resources>
