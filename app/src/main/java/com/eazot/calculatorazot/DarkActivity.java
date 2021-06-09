@@ -4,18 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.eazot.calculatorazot.domain.CalculatorImpl;
+
 public class DarkActivity extends AppCompatActivity implements CalculatorView{
 
-    private CalculatePresenter presenter;
+    private TextView resultText;
 
-    public DarkActivity(TextView resultText) {
-        this.resultText = resultText;
-    }
+    private CalculatePresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dark);
+        resultText = findViewById(R.id.result);
         presenter = new CalculatePresenter(this, new CalculatorImpl());
 
         findViewById(R.id.button1).setOnClickListener(v -> presenter.keyOnePressed());
@@ -38,11 +39,11 @@ public class DarkActivity extends AppCompatActivity implements CalculatorView{
         findViewById(R.id.button_para1).setOnClickListener(v -> presenter.keyPara1Pressed());
         findViewById(R.id.button_para2).setOnClickListener(v -> presenter.keyPara2Pressed());
     }
-    private final TextView resultText;
 
     @Override
-    public void showResult(String result){
+    public void showResult(String result) {
         resultText.setText(result);
+
     }
 
 }

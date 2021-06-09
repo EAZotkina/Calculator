@@ -1,7 +1,7 @@
 package com.eazot.calculatorazot;
 
-import com.eazot.calculatorazot.Calculator;
-import com.eazot.calculatorazot.Operator;
+import com.eazot.calculatorazot.domain.Calculator;
+import com.eazot.calculatorazot.domain.Operator;
 
 public class CalculatePresenter {
     
@@ -74,12 +74,48 @@ public class CalculatePresenter {
     }
 
     public void keyEqualPressed() {
+        isFirstArgument = false;
+
+        if (operator != null) {
+
+            int result = calculator.performBinaryOperator(argumentOne, argumentTwo, operator);
+
+            view.showResult(String.valueOf(result));
+
+            argumentOne = result;
+            argumentTwo = 0;
+        }
+        operator = Operator.EQU;
     }
 
     public void keyMultiPressed() {
+        isFirstArgument = false;
+
+        if (operator != null) {
+
+            int result = calculator.performBinaryOperator(argumentOne, argumentTwo, operator);
+
+            view.showResult(String.valueOf(result));
+
+            argumentOne = result;
+            argumentTwo = 0;
+        }
+        operator = Operator.MULTIPLICATION;
     }
 
     public void keyDividePressed() {
+        isFirstArgument = false;
+
+        if (operator != null) {
+
+            int result = calculator.performBinaryOperator(argumentOne, argumentTwo, operator);
+
+            view.showResult(String.valueOf(result));
+
+            argumentOne = result;
+            argumentTwo = 0;
+        }
+        operator = Operator.DIVISION;
     }
 
     public void keyAddPressed() {
@@ -94,23 +130,10 @@ public class CalculatePresenter {
             argumentOne = result;
             argumentTwo = 0;
         }
+        operator = Operator.ADD;
     }
 
     public void keySubPressed() {
-    }
-
-    public void keyClearPressed() {
-    }
-
-    public void keyDotPressed() {
-    }
-
-    public void keyPara1Pressed() {
-    }
-
-    public void keyPara2Pressed() {
-    }
-    public void keyPlusPressed() {
         isFirstArgument = false;
 
         if (operator != null) {
@@ -121,10 +144,31 @@ public class CalculatePresenter {
 
             argumentOne = result;
             argumentTwo = 0;
-
         }
+        operator = Operator.SUBTRACTION;
+    }
 
-        operator = Operator.ADD;
+    public void keyClearPressed() {
+        isFirstArgument = false;
+
+        if (operator != null) {
+
+            int result = 0;
+
+            view.showResult("");
+
+            argumentOne = 0;
+            argumentTwo = 0;
+        }
+    }
+
+    public void keyDotPressed() {
+    }
+
+    public void keyPara1Pressed() {
+    }
+
+    public void keyPara2Pressed() {
     }
 
     private void publishArgument() {

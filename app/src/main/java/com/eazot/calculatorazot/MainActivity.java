@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
+
         storage = new ThemeStorage(this);
 
         setTheme(storage.getTheme().getResource());
 
         setContentView(R.layout.activity_on_constrain_best);
-
         viewSetup();
 
 

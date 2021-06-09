@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 public class ThemeStorage {
 
     private Context context;
-    private SharedPreferences sharedPreferences;
+    private final SharedPreferences sharedPreferences;
     private static final String KEY_APP_THEME = "KEY_APP_THEME";
 
     public ThemeStorage (Context context){
